@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="paletcbol" content="paleteria, paletas, helados"></meta>
+    <title>Paletcbol</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div id="loading">
+    <div class="loading-spinner">
+      <!-- Icono de loading, puedes reemplazarlo con una imagen o un icono de font awesome -->
+      <i class="fas fa-spinner fa-spin"></i>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Paletcbol</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#" onclick="window.location.href = '/no-puedes-facturar-sin-pedir'; return false;" target="_blank">Facturation</a>
+          </li>
+          <li class="nav-item" href="#">
+            <a class="nav-link active" href="help.html">Help</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="About/about.html">About us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <div class="container">
+    <div class="row">
+      <!-- Formulario de paletas frutales -->
+      <div class="col-lg-6 col-md-12 mb-3 fondoBlancoT ladoI0" id="border0">
+        <h3>Paletas Frutales - 0,5$</h3>
+        <!-- Lista de sabores de paletas frutales -->
+        <label for="manzana"><input type="checkbox" id="manzana" value="manzana-0.5" name="frutas">Manzana</label>
+        <label for="tamarindo"><input type="checkbox" id="tamarindo" value="tamarindo-0.5" name="frutas">Tamarindo</label>
+        <label for="limon"><input type="checkbox" id="limon" value="limon-0.5" name="frutas">Limon</label><br><br>
+        <label for="fresa"><input type="checkbox" id="fresa" value="fresa-0.5" name="frutas">Fresa</label>
+        <label for="naranja"><input type="checkbox" id="naranja" value="naranja-0.5" name="frutas">Naranja</label>
+        <label for="uva"><input type="checkbox" id="uva" value="uva-0.5" name="frutas">Uva</label><br><br>
+        <label for="mango"><input type="checkbox" id="mango" value="mango-0.5" name="frutas">Mango</label>
+        <label for="durazno"><input type="checkbox" id="durazno" value="durazno-0.5" name="frutas">Durazno</label>
+        <label for="parchita"><input type="checkbox" id="parchita" value="parchita-0.5" name="frutas">Parchita</label><br><br>
+        <label for="guanabana"><input type="checkbox" id="guanabana" value="guanabana-0.5" name="frutas">Guanabana</label>
+        <label for="guayaba"><input type="checkbox" id="guayaba" value="guayaba-0.5" name="frutas">Guayaba</label>
+        <label for="coco"><input type="checkbox" id="coco" value="coco-0.5" name="frutas">Coco</label>
+      </div>
+      <!-- Formulario de paletas con leche condensada -->
+      <div class="col-lg-6 col-md-12 mb-3 fondoBlancoT border0" id="ladoD0">
+        <h3>Paletas con L.densada - 1,5$</h3>
+        <!-- Lista de sabores de paletas con leche condensada -->
+        <label for="coco"><input type="checkbox" id="coco" value="coco-1.5" name="sabores">Coco</label>
+        <label for="oreo"><input type="checkbox" id="oreo" value="oreo-1.5" name="sabores">Oreo</label>
+        <label for="chocolate"><input type="checkbox" id="chocolate" value="chocolate-1.5" name="sabores">Chocolate</label><br><br>
+        <label for="dulce-leche"><input type="checkbox" id="dulce-leche" value="dulce-leche-1.5" name="sabores">Dulce Leche</label>
+        <label for="tortaS"><input type="checkbox" id="tortaS" value="tortaS-1.5" name="sabores">Torta Suiza</label>
+        <label for="ronCP"><input type="checkbox" id="ronCP" value="ronCP-1.5" name="sabores">Ron con Pasas</label><br><br>
+        <label for="samba"><input type="checkbox" id="samba" value="samba-1.5" name="sabores">Samba</label>
+        <label for="toddy"><input type="checkbox" id="toddy" value="toddy-1.5" name="sabores">Toddy</label>
+        <label for="cocosette"><input type="checkbox" id="cocosette" value="cocosette-1.5" name="sabores">Cocosette</label><br><br>
+        <label for="hershey"><input type="checkbox" name="sabores" id="hershey" value="hershey-1.5">Hershey's</label>
+        <label for="carre"><input type="checkbox" name="sabores" id="carre" value="carre-1.5">Carre</label>
+        <label for="savoyL"><input type="checkbox" name="sabores" id="savoyL" value="savoyL-1.5">Savoy de Leche</label><br><br>
+        <label for="savoyB"><input type="checkbox" name="sabores" id="savoyB" value="savoyB-1.5">Savoy Blanco</label>
+        <label for="piru"><input type="checkbox" name="sabores" id="piru" value="piru-1.5">Pirulin</label>
+        <label for="toronto"><input type="checkbox" name="sabores" id="toro" value="toro-1.5">Toronto</label>
+      </div>
+    </div>
+    <br><br><br>
+
+    <!-- Formulario de adicionales -->
+    <div class="row">
+      <div class="col-lg-6 col-md-12 mb-3 fondoBlancoT ladoI0" id="border2">
+        <h3>Adicionales - 0,3$</h3>
+        <!-- Lista de adicionales -->
+        <label for="sirope-chocolate"><input type="checkbox" id="sirope-chocolate" value="sirope-chocolate-0.3" name="adicionales"> Sirope Chocolate</label>
+        <label for="sirope-fresa"><input type="checkbox" id="sirope-fresa" value="sirope-fresa-0.3" name="adicionales"> Sirope Fresa</label>
+        <label for="sirope-maple"><input type="checkbox" id="sirope-maple" value="sirope-maple-0.3" name="adicionales"> Sirope Maple</label><br><br>
+        <label for="oreo-granulado"><input type="checkbox" id="oreo-granulado" value="oreo-granulado-0.3" name="adicionales"> Oreo Granulado</label>
+        <label for="mani"><input type="checkbox" id="mani" value="mani-0.3" name="adicionales"> Mani</label>
+        <label for="mani-granulado"><input type="checkbox" id="mani-granulado" value="mani-granulado-0.3" name="adicionales"> Mani Granulado</label><br><br>
+        <label for="chispas-colores"><input type="checkbox" id="chispas-colores" value="chispas-colores-0.3" name="adicionales"> Chispas Colores</label>
+        <label for="chispas-chocolate"><input type="checkbox" id="chispas-chocolate" value="chispas-chocolate-0.3" name="adicionales"> Chispas Chocolate</label>
+        <label for="gomitas"><input type="checkbox" id="gomitas" value="gomitas-0.3" name="adicionales"> Gomitas</label><br><br>
+        <label for="gotas-chocolate"><input type="checkbox" id="gotas-chocolate" value="gotas-chocolate-0.3" name="adicionales"> Gotas de Chocolate</label>
+        <label for="hersheys"><input type="checkbox" id="hersheys" value="hersheys-0.3" name="adicionales"> Hershey's</label>
+        <label for="perlas"><input type="checkbox" id="perlas" value="perlas-0.3" name="adicionales"> Perlas</label><br><br>
+        <label for="perlas-crujientes"><input type="checkbox" id="perlas-crujientes" value="perlas-crujientes-0.3" name="adicionales"> Perlas Crujientes Chocolate</label>
+      </div>
+      <br><br><br>
+
+      <!-- Lista de paquetes VIP -->
+      <div class="col-lg-6 col-md-12 mb-3 fondoBlancoT border0" id="ladoD1">
+        <h3>PUESTO - VIP</h3>
+        <ol>
+          <li>Clasico - 1,5$</li>
+          <p>El Clasico trae 1 paleta frutal con Sirope a preferencia + torta marmoleada.</p><br>
+          <li>Premium - 3,8$</li>
+          <p>El Premium trae 2 paletas (Frutal y Con densada) con Sirope a preferencia y 1 tipo de lluvia a preferencia + 1 Brownie.</p><br>
+          <li>Diamante - 5$</li>
+          <p>El Diamante trae 3 paletas con densada con Sirope a preferencia y 2 tipos de lluvia a preferencia + 1 Brownie y 1 Fresa con Crema.</p>
+        </ol>
+      </div>
+    </div>
+    <br><br><br>
+
+    <!-- Botón de envío -->
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <button type="button" class="boton" onclick="enviar()">Enviar</button>
+      </div>
+    </div>
+  </div>
+  
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>

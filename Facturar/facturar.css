@@ -1,0 +1,122 @@
+@keyframes gradientBackground {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(270deg, #ff6f61, #d4a5a5, #2b90d9, #FF9CEE, #B28DFF, #BFFCC6, #E7FFAC);
+  background-size: 600% 600%;
+  animation: gradientBackground 15s ease infinite;
+  margin: 0;
+  padding: 0;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+  color: #333;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.col-lg-12 {
+  width: 100%;
+}
+
+.col-lg-6 {
+  width: 50%;
+  padding: 10px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 10px 0;
+  background-color: #007bff;
+  color: #000;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+form {
+  background-color: #fff;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  color: black;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+  display: block;
+  margin: 10px 0 5px;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+#resultado {
+  color: green;
+  font-size: 18px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .col-lg-6 {
+    width: 100%;
+  }
+
+  .btn {
+    width: 100%;
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  h1, h2, h3 {
+    font-size: 1.5em;
+  }
+
+  form {
+    padding: 10px;
+  }
+
+  .btn {
+    padding: 10px 0;
+  }
+}
+
